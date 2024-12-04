@@ -1,0 +1,78 @@
+/* Experience Section Styles */
+.experience-container {
+    padding-top: 8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experience-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #fff;
+    border-bottom: 4px solid #05E95E;
+    display: inline-block;
+    margin-left: 30rem;
+}
+
+.experience-cards {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .experience-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.experience-card {
+    color: #333;
+    background-color: #f9f9f9e4;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    background-color: #05E95E; /* Hover background color */
+    color: #fff; /* Hover text color */
+}
+
+.role {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: inherit;
+}
+
+.company,
+.duration,
+.details {
+    font-size: 1rem;
+    color: inherit;
+}
+
+.company {
+    font-size: 1.125rem;
+    margin: 0.5rem 0;
+}
+
+.duration {
+    margin: 0.25rem 0;
+    font-style: italic;
+}
+
+.details {
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
